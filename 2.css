@@ -1,0 +1,34 @@
+/* Block style */
+.paragraph{
+    margin: 9px;
+    padding: 9px;
+    border: 2px solid yellowgreen;
+}
+
+/* elemets style */
+.paragraph_intro{
+    background-color: blueviolet;
+    font-weight: bold;
+}
+
+.paragraph_main{
+    background-color: aqua;
+}
+
+.paragraph_quote{
+    background-color: #4ac24a;
+    font-size: 14px;
+}
+
+.paragraph_footer{
+    background-color: #fc5151;
+    font-style: italic;
+}
+
+/* Modifier styles (optional) */
+.paragraph__quote--highlighted{
+    background-color: yellow;
+    border-color: orange;
+    font-weight: bold;
+
+}

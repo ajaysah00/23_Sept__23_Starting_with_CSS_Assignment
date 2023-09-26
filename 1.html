@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css example </title>
+<style>
+
+    .internal{
+        color: blue;
+        border: 2px solid green;
+        border-radius: 8px;
+        display:inline-flex;
+        padding: 4px;
+    }
+
+</style>
+<link rel="stylesheet"  type="text/css" href="1.css">
+</head>
+<body align="center" style="background-color: rgb(223, 230, 139); font-size: 30px;">
+     <!-- Inline CSS - Styles applied directly to individual elements -->
+    <div style="color: red; border: 2px solid green; padding: 4px; display:inline-flex ; border-radius: 8px;">
+        <p>This is  my first paragraph. In this paragraph has added inine CSS which is added directly in elements </p>
+    </div>
+<br>
+<br>
+ <!-- Internal CSS - Styles applied using class selector -->
+    <div class="internal">
+        <p>This is my second paragraph. In this paragraph has added internal CSS which is added with the help of Clsss selector</p>
+    </div>
+    <br>
+    <br>
+    <!-- External CSS - Styles applied from an external CSS file (external.css) -->
+    <div class="external">
+        <p>This is thirs paragraph.In this paragraph has added external CSS which is added by with the help of Css file</p>
+    </div>
+</body> 
+</html>

@@ -1,0 +1,7 @@
+.external{
+color: rgb(255, 0, 200);
+border: 2px solid black;
+display: inline-flex;
+padding: 4px;
+border-radius: 8px;
+}

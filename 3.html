@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style form</title>
+    <style>
+        /* Custom color palette */
+        :root {
+            --main-bg-color: #f0f0f0;
+            --form-bg-color: #ffffff;
+            --input-bg-color: #f5f5f5;
+            --button-bg-color: #007acc;
+            --button-text-color: #ffffff;
+            --section-opacity: 0.8;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--main-bg-color);
+        }
+
+        /* Style the form container */
+        .form-container {
+            background-color: var(--form-bg-color);
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style the form sections */
+        .form_section {
+            background-color: rgba(255, 255, 255, var(--section-opacity));
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Style the input fields and labels */
+        label,
+        input {
+            display: block;
+            margin-bottom: 4px;
+            padding: 5px ;
+        }
+
+        input[type="text"],input[type="email"],input[="password"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: var(--input-bg-color);
+        }
+
+        /* Style the submit button */
+        input[type="submit"] {
+            background-color: var(--button-bg-color);
+            color: var(--button-text-color);zz
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Style the submit button on hover */
+        input[type="submit"]:hover {
+            background-color: #5baa00;
+        }
+        h1{
+            color: red;
+            text-shadow: 2px 3px gray;
+        }
+    </style>
+</head>
+
+<body style="background-color: bisque; font-size: 30px;">
+    <div class="form-container" style="background-color: aqua">
+        <h1>Style Form</h1>
+        <div class="form_section">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+        </div>
+        <div class="form_section">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="enter your email">
+        </div>
+
+        <div class="form_section" style="opacity: var(--section-opacity);">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="enter your password">
+        </div>
+
+        <div class="form_section">
+            <input type="submit" value="submit">
+        </div>
+    </div>
+</body>
+
+</html>
